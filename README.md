@@ -1,27 +1,27 @@
 # HtmlSmuggling
 &emsp; HTML smuggling is a malicious technique used by hackers to hide malware payloads in an encoded script in a specially crafted HTML attachment or web page. The malicious script decodes and deploys the payload on the targeted device when the victim opens/clicks the HTML attachment/link. The HTML smuggling technique leverages legitimate HTML5 and JavaScript features to hide malicious payloads and evade security detections.
 
-&emsp; The HTML smuggling method is highly evasive. It could bypass standard perimeter security controls like web proxies and email gateways, which only check for suspicious attachments like EXE, DLL, ZIP, RAR, DOCX or pdf
+&emsp; The HTML smuggling method is highly evasive. It could bypass standard perimeter security controls like web proxies and email gateways, which only check for suspicious attachments like EXE, DLL, ZIP, RAR, DOCX or PDF
 
 &emsp; **1) HtmlSmuggling.py :** Embeds the selected binary file (exe, dll, docx, pdf, etc) into the Javascript file. Obfuscates Javascript functions. This makes it difficult to decode javascript functions.
 
-&emsp; "HtmlSmuggling" attack type is an attack type affected by browser settings. In addition, exe, dll type files downloaded from the internet can be blocked by smartscreen. However, pdf, docx attacks are more successful.
+&emsp; "HtmlSmuggling" attack type is an attack type affected by browser settings. In addition, EXE, DLL type files downloaded from the internet can be blocked by smartscreen. However, PDF, DOCX attacks are more successful.
 
 ![htmlsmuggling](https://user-images.githubusercontent.com/71177413/174580595-4ade6473-7d2a-4ef6-ab98-c788fbd5d3e5.JPG)
-[jpg source: From the training notes, Abdulkadir GÜNGÖR]
+&emsp; [jpg source: From the training notes, Abdulkadir GÜNGÖR]
 
 Using the Script
 ---
 
-**[command]**
+**[Command]**
 ```
 >> HtmlSmuggling.py filename filepath
 ```
-**filename:** Browser refers to the file name to be given to the file to be downloaded. It is the file name that will be seen in the browser and the downloaded folder.
+&emsp; **filename:** Browser refers to the file name to be given to the file to be downloaded. It is the file name that will be seen in the browser and the downloaded folder.
 
-**filepath:** The path of the file to be downloaded
+&emsp; **filepath:** The path of the file to be downloaded
 
-**[command example]**
+**[Command Example]**
 ```
 >> HtmlSmuggling.py MicrosoftOffice.exe c:\Users\user0\Desktop\malware.exe
 >> HtmlSmuggling.py Office365.dll c:\Users\user0\Desktop\malware.dll
@@ -42,24 +42,24 @@ The Compiled Version of the Program Can be Downloaded from the Links Below.
 
 Requirement
 ---
-Required library: pyinstaller
+&emsp; Required library: pyinstaller
 
 ```
 pip install pyinstaller
 ```
 
-"pyinstaller" will be used to make the code one piece executable
+&emsp; "pyinstaller" will be used to make the code one piece executable
 
 Compilation
 ---
-[Language : Python 3.8.5]
+&emsp; [Language : Python 3.8.5]
 ```
 pyinstaller --onefile --icon=HtmlSmuggling.ico HtmlSmuggling.py
 ```
 
 Video and Screenshots of the Vulnerability
 ---
-The use of the compiled version of the script is shown in the Youtube video.
+&emsp; The use of the compiled version of the script is shown in the Youtube video.
 It can be viewed at the link below.
 
 **[Youtube Link]** [https://www.youtube.com/watch?v=_rQrLeDaFSU](https://www.youtube.com/watch?v=ft7rdZVFv_c)
@@ -83,4 +83,4 @@ It can be viewed at the link below.
 
 Legal Warning
 ---
-Run your tests on virtual machines. The responsibility for illegal use belongs to the user. Shared for educational purposes.
+&emsp; Run your tests on virtual machines. The responsibility for illegal use belongs to the user. Shared for educational purposes.
